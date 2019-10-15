@@ -1,6 +1,12 @@
 version: "3"
 
 services:
+  backend:
+    build:
+      context: ./
+      dockerfile: ./backend/Dockerfile
+    volumes:
+      - ./src/backend:/backend
   frontend:
     build:
       context: ./
