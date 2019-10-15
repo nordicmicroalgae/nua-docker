@@ -7,6 +7,8 @@ services:
       dockerfile: ./backend/Dockerfile
     volumes:
       - ./src/backend:/backend
+    ports:
+      - "5000:5000"
   frontend:
     build:
       context: ./
