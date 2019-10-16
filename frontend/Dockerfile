@@ -8,4 +8,4 @@ COPY ./src/frontend /frontend
 
 RUN yarn install --modules-folder /node_modules
 
-CMD ["yarn", "run", "start"]
+CMD ["webpack-dev-server", "--host", "0.0.0.0", "--port", "8080"]
