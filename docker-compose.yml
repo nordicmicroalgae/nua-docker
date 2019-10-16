@@ -17,3 +17,5 @@ services:
       dockerfile: ./frontend/Dockerfile
     volumes:
       - ./src/frontend:/frontend
+    ports:
+      - "8080:8080"
