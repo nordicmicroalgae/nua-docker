@@ -4,7 +4,7 @@ ENV PATH "/node_modules/.bin:${PATH}"
 
 WORKDIR /frontend
 
-COPY ./src/frontend /frontend
+COPY ./src/nua-frontend /frontend
 
 RUN yarn install --modules-folder /node_modules
 

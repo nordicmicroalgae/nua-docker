@@ -2,7 +2,7 @@ FROM python
 
 WORKDIR /backend
 
-COPY ./src/backend /backend
+COPY ./src/nua-backend /backend
 
 RUN pip install -r requirements.txt
 
