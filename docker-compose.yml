@@ -2,8 +2,8 @@ version: "3"
 
 services:
   backend:
-    environment:
-      FLASK_ENV: "development"
+    env_file:
+      - nordic-microalgae.env
     build:
       context: ./
       dockerfile: ./backend/Dockerfile
